@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="index.html" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__nav container">
+        <nav>
+          <a class="nav__title decoration" href="index.html">WebStudio</a>
+          <ul class="nav__list style">
+            <li class="nav__list--button decoration">
+              <a class="nav__list--links decoration" href="index.html">Estudio</a>
+            </li>
+            <li class="nav__list--button decoration">
+              <a class="nav__list--links decoration current" href="portfolio.html">Portafolio</a>
+            </li>
+            <li class="nav__list--button decoration">
+              <a class="nav__list--links decoration" href="#">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav__contacts style">
+          <li>
+            <a class="nav__contacts--link decoration" href="mailto:info@devstudio.com">
+              <svg class="contacts__link--email">
+                <use href="./img/icons.svg/symbol-defs.svg#icon-contact-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="nav__contacts--link decoration" href="tel:+525555296000">
+              <svg class="contacts__link--phone">
+                <use href="./img/icons.svg/symbol-defs.svg#icon-contact-phone"></use>
+              </svg>
+              +52 55 5529 6000</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="portfolio__title">Portfolio</h1>
+      <section class="portfolio__main">
+        <ul class="portfolio__main--options container style">
+          <li><button class="main__options--list active focus_tab" type="button">Todo</button></li>
+          <li><button class="main__options--list focus_tab" type="button">Sitios web</button></li>
+          <li><button class="main__options--list focus_tab" type="button">Aplicaciones</button></li>
+          <li><button class="main__options--list focus_tab" type="button">Diseno</button></li>
+          <li><button class="main__options--list focus_tab" type="button">Marketing</button></li>
+        </ul>
+        <ul class="portfolio__main--list container style">
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/Project1WebsiteTechnoduck.jpg"
+                alt="A laptop showing a Web-site"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Technoduck</h3>
+            <p class="list__images--name text_article">Web-site</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/Project2DesignPoster.jpg"
+                alt="Two players playing basketball"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Poster New Orleans vs Golden Star</h3>
+            <p class="list__images--name text_article">Design</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/Project3AppsRestaurant.jpg"
+                alt="An advertisement of a seafood restaurant"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">SeaFood Restaurant</h3>
+            <p class="list__images--name text_article">Apps</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/Project4MarketingPrime.jpg"
+                alt="A set of Black headphones"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Project Prime</h3>
+            <p class="list__images--name text_article">Marketing</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/Project5AppsBoxes.jpg"
+                alt="A big white box next to a smaller brown one"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Project Boxes</h3>
+            <p class="list__images--name text_article">Apps</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/Project6WebsiteInspiration.jpg"
+                alt="An IMac showing a map in black"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Inspiration has no Borders</h3>
+            <p class="list__images--name text_article">Web-site</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/Project7DesignLimited.jpg"
+                alt="A wide open white magazine"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Limited Edition</h3>
+            <p class="list__images--name text_article">Design</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img src="./img/Project8MarketingLab.jpg" alt="a white tag" width="370" />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Project LAB</h3>
+            <p class="list__images--name text_article">Marketing</p>
+          </li>
+          <li class="main__list--images">
+            <div class="list__images--card">
+              <img
+                src="./img/project9AppsBusiness.jpg"
+                alt="two ahnds typing on a macbook"
+                width="370"
+              />
+              <p class="images__card--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae doloremque
+                officia beatae iste, quaerat aperiam, veritatis assumenda exercitationem
+                reprehenderit eveniet dolorem eum iusto in possimus, voluptates laboriosam
+                perferendis enim?
+              </p>
+            </div>
+            <h3 class="list__images--article text_article">Growing Business</h3>
+            <p class="list__images--name text_article">Apps</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__section container">
+        <div class="footer__section--left style">
+          <ul class="section__left--title style">
+            <li><a class="nav__title  decoration" href="#">WebStudio</a></li>
+          </ul>
+          <address>
+            <ul class="style">
+              <li class="footer__left--addresses">
+                <a
+                  class="address_map decoration"
+                  href="enlace_google_maps"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >696 Park Ave, New York, NY 10065, United States</a
+                >
+              </li>
+              <li class="footer__left--addresses">
+                <a class="nav__contacts--link decoration" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__left--addresses">
+                <a class="nav__contacts--link decoration" href="tel:+1212-772-4150">+1 212-772-41590</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__section--middle style">
+          <span class="section__middle--title">ENCUENTRANOS EN:</span>
+          <ul class="section__middle--list style">
+            <li>
+              <a href="" class="middle__list--icon">
+                <svg class="list__icon--link">
+                  <use href="./img/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="middle__list--icon">
+                <svg class="list__icon--link">
+                  <use href="./img/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="middle__list--icon">
+                <svg class="list__icon--link">
+                  <use href="./img/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="middle__list--icon">
+                <svg class="list__icon--link">
+                  <use href="./img/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section--right">
+          <p class="section__right--title">suscríbase al boletín informativo</p>
+          <label>
+            <input
+              class="section__right--form"
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+            />
+          </label>
+          <button class="section__right--button" type="submit">
+            Suscribase
+            <svg class="right__button--icon">
+              <use href="./img/icons.svg/symbol-defs-1.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
