@@ -1,24 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "./utils/variables.scss";
+@import "./components/normalization.scss";
+@import "./components/about_section";
+@import "./components/backdrop";
+@import "./components/clients_section";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/main_section";
+@import "./components/service_section";
+@import "./components/team_section";
+@import "./components/portfolio_cards";
+@import "./components/portfolio_main";
 
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-$primary-color:rgb(33, 150, 243);
-$font-color:rgb(33, 33, 33);
-$font-color-shadow:rgba(33, 33, 33, 0.20);
-$detail-color:rgb(255, 255, 255);
-$detail-color-transparent:rgba(255, 255, 255, .1);
-$detail-color-tr:rgba(255, 255, 255, 1);
-$detail-color-border:rgba(255, 255, 255, 0.30);
-$detail-color-bg:rgba(33, 150, 243, 0.00);
-$inactive-color:rgb(117, 117, 117);
-$inactive-color-transparent:rgba(117, 117, 117, 0.50);
-$background-color-1: rgb(47, 48, 58);
-$background-color-1-transparent: rgba(47, 48, 58, 0.80); 
-$background-color-2: rgb(245, 244, 250);
-$background-color-3: rgba(175, 177, 184, 1);
-$background-color-4: rgba(33, 150, 243, 0.90);
-$background-color-5-transparent: rgba(0, 0, 0, 0.20);
-$color-shadow:rgba(0, 0, 0, 0.15);
-$font-family-1: 'Roboto', sans-serif;
-$font-family-2: 'Raleway', sans-serif,'cherry Bomb One';
-$cubic: cubic-bezier(0.4, 0, 0.2, 1)
