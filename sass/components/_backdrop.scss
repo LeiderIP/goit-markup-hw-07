@@ -1,0 +1,301 @@
+.modal{
+    padding:0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 528px;
+    height: 581px;
+    background-color:$detail-color-tr;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 
+        0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    .modal__close{
+        height: 30px;
+        width: 100%;
+        margin: 8px 8px 2px 490px;
+    }
+    .modal__close--button{
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-color:$background-color-5-transparent;
+        background-color:$detail-color;
+        transition: fill 250ms$cubic, background-color 250ms$cubic;
+        &:focus,
+        &:hover{
+            cursor: pointer;
+            fill:$primary-color;
+            background-color:$detail-color;
+            outline: none;
+        }
+    }   
+} 
+  
+
+// .modal__close{
+//     height: 30px;
+//     width: 100%;
+//     margin: 8px 8px 2px 490px;
+// }
+
+// .modal__close--button{
+//     display: flex;
+//     align-items: center;
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+//     border-color:$background-color-5-transparent;
+//     background-color:$detail-color;
+//     transition: fill 250ms$cubic, background-color 250ms$cubic;
+// }
+
+// .modal__close--button:focus,
+// .modal__close--button:hover{
+//     cursor: pointer;
+//     fill:$primary-color;
+//     background-color:$detail-color;
+//     outline: none;
+// }
+
+.modal__form{
+    margin: 40px;
+    position: absolute;
+    flex-direction: column;
+    gap: 12px;
+    .modal__form--title{
+        text-align: center;
+        color:$font-color;
+        font-family:$font-family-1;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0 0 2px 0;
+    }
+}
+
+.modal__input{
+    position: relative;
+    transition: color 250ms$cubic;
+    &:is(:focus, :hover){
+        border-color: $primary-color;
+        fill: $primary-color;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+// .modal__form--title{
+//     text-align: center;
+//     color:$font-color;
+//     font-family:$font-family-1;
+//     font-size: 20px;
+//     font-style: normal;
+//     font-weight: 700;
+//     margin: 0 0 2px 0;
+// }
+
+// .modal__input{
+//     position: relative;
+//     transition: color 250ms$cubic;
+// }
+
+// .modal__input:focus,
+// .input:focus,
+// .modal__input:hover,
+// .input:hover{
+//     border-color: $primary-color;
+//     fill: $primary-color;
+//     cursor: pointer;
+//     outline: none;
+// }
+
+.label{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10px;
+    color:$inactive-color;
+    font-family:$font-family-1;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+}
+
+.input{
+    border-radius: 4px;
+    border: 1px solid$font-color-shadow;
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    transition: color 250ms$cubic;
+    &:is(:hover, :focus){
+        border-color: $primary-color;
+        fill: $primary-color;
+        cursor: text;
+        outline: none;
+    }
+}
+
+.label__icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    bottom: 11px;
+    cursor: pointer;
+}
+
+// .input{
+//     border-radius: 4px;
+//     border: 1px solid$font-color-shadow;
+//     width: 448px;
+//     height: 40px;
+//     padding-left: 42px;
+//     transition: color 250ms$cubic;
+// }
+
+// .label__icon{
+//     position: absolute;
+//     width: 18px;
+//     height: 18px;
+//     left: 12px;
+//     bottom: 11px;
+// }
+
+.textarea{
+    color:$inactive-color-transparent;
+    font-family:$font-family-1;
+    font-size: 12px;
+    font-weight: 400;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid$font-color-shadow;
+    transition: color 250ms$cubic;
+    resize: none;
+    &:focus,
+    &:hover{
+        border-color:$primary-color;
+        cursor: text;
+        outline: none;
+    }
+}
+
+// .textarea:hover,
+// .textarea:focus{
+//     border-color:$primary-color;
+//     cursor: pointer;
+//     outline: none;
+// }
+
+.terms{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    &:hover 
+    .checkbox__unchecked{
+        fill:$primary-color;
+        cursor: pointer;
+    }
+}
+
+// .terms:hover .checkbox__unchecked{
+//     fill:$primary-color;
+//     cursor: pointer;
+// }
+
+.checkbox__checked{
+    width: 16px;
+    height: 15px;
+    background-color:$primary-color;
+    fill:$detail-color;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    margin-left:18px;
+}
+
+.checkbox__unchecked{
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    margin-left:18px;
+}
+
+.checkbox:checked~.checkbox__unchecked{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.checkbox:checked~.checkbox__checked{
+    opacity: 1;
+    visibility: visible;
+}
+
+.checkbox_text{
+    gap: 8px;
+    color:$inactive-color;
+    font-family:$font-family-1;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    padding-left: 12px;
+    transition: color 250ms$cubic;
+    margin-left: 30px;
+}
+
+.modal__button{
+    text-align: center;
+    .modal__button--submit{
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        border: none;
+        background:$primary-color;
+        box-shadow: 0px 4px 4px 0px$background-color-5-transparent;
+        color:$detail-color;
+        transition: 0.3s$cubic;
+        &:focus,
+        &:hover{
+                cursor: pointer;
+        transform: scale(1.2);
+        outline: none;
+        }
+    }
+}
+
+// .modal__button--submit{
+//     margin-top: 30px;
+//     width: 200px;
+//     height: 50px;
+//     border-radius: 4px;
+//     border: none;
+//     background:$primary-color;
+//     box-shadow: 0px 4px 4px 0px$background-color-5-transparent;
+//     color:$detail-color;
+//     transition: 0.3s$cubic;
+// }
+
+// .modal__button--submit:hover,
+// .modal__button--submit:focus{
+//     cursor: pointer;
+//     transform: scale(1.2);
+//     outline: none;
+// }
+
+.input:focus + .label__icon{
+    fill:$primary-color;
+}

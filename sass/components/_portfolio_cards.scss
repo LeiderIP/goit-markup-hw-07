@@ -1,0 +1,89 @@
+.portfolio__main--list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    .main__list--images{
+        background-color: $detail-color;
+        border: 1px solid #eee;
+        transition: color 250ms $cubic;
+        position: relative;
+        &:hover{
+            cursor: pointer;
+            transition: box-shadow 250ms $cubic;
+            box-shadow:
+            1px 4px 6px 0px rgba(0, 0, 0, 0.16), 
+            0px 4px 4px 0px rgba(0, 0, 0, 0.06), 
+            0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        }
+    }
+    .list__images--card{
+        position: relative;
+        overflow: hidden;
+        transition: color 250ms $cubic;
+    }
+}
+
+// .main__list--images{
+//     background-color: $detail-color;
+//     border: 1px solid #eee;
+//     transition: color 250ms $cubic;
+//     position: relative;
+// }
+
+// .main__list--images:hover{
+//     cursor: pointer;
+//     transition: box-shadow 250ms $cubic;
+//     box-shadow:
+//     1px 4px 6px 0px rgba(0, 0, 0, 0.16), 
+//     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 
+//     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+// }
+
+// .list__images--card{
+//     position: relative;
+//     overflow: hidden;
+//     transition: color 250ms $cubic;
+// }
+
+.main__list--images:hover .images__card--text{
+    top: 0%;
+}
+
+.images__card--text{
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: $detail-color;
+    font-size: 18px;
+    font-family: $font-family-1;
+    font-weight: 400;
+    line-height: 1.55;
+    background-color: $background-color-4;
+    padding: 63px 24px;
+    transition: top 0.3s ease;
+}
+
+.list__images--article{
+    color: $font-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2px;
+}
+
+.list__images--name{
+    color: $inactive-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.text_article{
+    margin: 20px 24px;
+}

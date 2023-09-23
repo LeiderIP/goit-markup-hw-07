@@ -1,0 +1,273 @@
+.footer{
+    background-color: $background-color-1;
+    height: 252px;
+    .footer__section{
+        padding: 60px 0;
+        display: flex;
+        .footer__section--left{
+            justify-content: left;
+            margin-right: 70px;
+        }
+    }
+}
+
+// .footer__section{
+//     padding: 60px 0;
+//     display: flex;
+// }
+
+// .footer__section--left{
+//     justify-content: left;
+//     margin-right: 70px;
+// }
+
+.section__left--title{
+    margin-bottom: 9px;
+    margin-top: 0;
+    .left__title--text{
+        color: $primary-color;
+        font-family: $font-family-2;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.17;
+        width: 696px;
+        margin-right: 93px;
+    }
+}
+
+.footer__left--addresses{
+    margin-bottom: 9px;
+    width: 231px;
+}
+
+// .left__title--text{
+//     color: $primary-color;
+//     font-family: $font-family-2;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.17;
+//     width: 696px;
+//     margin-right: 93px;
+// }
+
+.left__address--map{
+    color: $detail-color;
+    font-weight: 400;
+    line-height: 1.71;
+    transition: color 250ms $cubic;
+    &:focus,
+    &:hover{
+        color:$primary-color;
+    }
+}
+
+// .left__address--map:hover,
+// .left__address--map:focus{
+//     color:$primary-color;
+// }
+
+.left__address--contact{
+    cursor: pointer ;
+    font-weight: 500;
+    line-height: 1.17;
+    color: $inactive-color;
+    display: flex;
+    align-items: center;
+    &:hover,
+    &:focus{
+        fill: $primary-color;
+        color: $primary-color;
+        cursor: pointer;
+        transition: color 250ms $cubic, fill 250ms $cubic;
+    }
+}
+
+// .left__address--contact:hover,
+// .left__address--contact:focus{
+//     fill: $primary-color;
+//     color: $primary-color;
+//     cursor: pointer;
+//     transition: color 250ms $cubic, fill 250ms $cubic;
+// }
+
+.footer__section--middle{
+    width: auto;
+    height: auto;
+    .section__middle--title{
+        color: $detail-color;
+        font-family: $font-family-1;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    .section__middle--list{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+// .section__middle--title{
+//     color: $detail-color;
+//     font-family: $font-family-1;
+//     font-size: 14px;
+//     font-style: normal;
+//     font-weight: 700;
+//     line-height: 1.17;
+//     letter-spacing: 0.42px;
+//     text-transform: uppercase;
+// }
+
+// .section__middle--list{
+//     display: flex;
+//     gap: 10px;
+// }
+
+.middle__list--icon{
+    fill: $background-color-3;
+    background-color: $detail-color-transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    transition: fill 250ms $cubic, background-color 250ms $cubic;
+    &:hover,
+    &:focus{
+        cursor: pointer;
+        background-color: $primary-color;
+        fill: $detail-color;
+    }
+    .list__icon--link{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+// .middle__list--icon:hover,
+// .middle__list--icon:focus{
+//     cursor: pointer;
+//     background-color: $primary-color;
+//     fill: $detail-color;
+// }
+
+// .list__icon--link{
+//     width: 20px;
+//     height: 20px;
+// }
+
+.footer__section--right{
+    margin-left: 93px;
+    .section__right--title{
+        color: $detail-color;
+        font-family: $font-family-1;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+    }
+    .section__right--form{
+        width: 358px;
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid $detail-color-border;
+        background: $detail-color-bg;
+        box-shadow: 0px 4px 4px 0px $color-shadow;
+        padding: 15px 16px;
+        color: $detail-color;
+        transition: color 250ms $cubic;
+        &:hover,
+        &:focus{
+            outline: none;
+            border: 2px solid $primary-color;
+        }
+    }
+}
+
+// .section__right--title{
+//     color: $detail-color;
+//     font-family: $font-family-1;
+//     font-size: 14px;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     margin: 0 0 20px 0;
+// }
+
+// .section__right--form{
+//     width: 358px;
+//     height: 50px;
+//     border-radius: 4px;
+//     border: 1px solid $detail-color-border;
+//     background: $detail-color-bg;
+//     box-shadow: 0px 4px 4px 0px $color-shadow;
+//     padding: 15px 16px;
+//     color: $detail-color;
+//     transition: color 250ms $cubic;
+// }
+
+// .section__right--form:hover,
+// .section__right--form:focus{
+//     outline: none;
+//     border: 2px solid $primary-color;
+// }
+
+.section__right--button{
+    color: $detail-color;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $font-family-1;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 0 45px 0 0;
+    border-radius: 4px;
+    background: $primary-color;
+    box-shadow: 0px 4px 4px 0px $color-shadow;
+    border: none;
+    position: relative;
+    transition: 0.3s $cubic;
+    &:hover,
+    &:focus{
+        cursor: pointer;
+        transform: scale(1.1);
+        outline: none;
+        }
+    .right__button--icon{
+        fill: $detail-color;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 148px;
+        top: 13px;
+        transition: 0.3s $cubic;
+        &:hover,
+        &:focus{
+            cursor: pointer;
+            transform: scale(1.1);
+            outline: none;
+        }
+    }
+}
+
+// .right__button--icon{
+//     fill: $detail-color;
+//     position: absolute;
+//     width: 24px;
+//     height: 24px;
+//     left: 148px;
+//     top: 13px;
+//     transition: 0.3s $cubic;
+// }
+
+// .section__right--button:hover,
+// .section__right--button:focus,
+// .right__button--icon:hover,
+// .right__button--icon:focus{
+//     cursor: pointer;
+//     transform: scale(1.1);
+//     outline: none;
+// }
